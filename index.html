@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Nursing Resource #1 - Nursing Time Conversion Tutors</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Nursing Resource #1 - Nursing Time Conversion Tutors</h1>
+
+  <h2>Sections:</h2>
+  <ul id="sections-list">
+    <li><a href="#standard-to-military-time">Standard Time To Military Time</a></li>
+    <li><a href="#military-to-standard-time">Military Time to Standard Time</a></li>
+    <li><a href="#analog-clock-conversions">Analog Clock Conversions</a></li>
+  </ul>
+
+  <h2>Objectives:</h2>
+  <ul>
+    <li>Help nursing students convert between standard (12-hour) and military (24-hour) time formats quickly and confidently</li>
+    <li>Learn how to convert from analog clock to standard or military time</li>
+  </ul>
+
+  <div class="section-box" id="standard-to-military-time">
+    <h2>Standard Time To Military Time</h2>
+    <p>In most medical settings, military time (24‑hour clock) is used to mitigate confusion around AM and PM. Unlike standard time, military time counts all 24 hours of the day continuously from 00:00 (midnight) to 23:59 (11:59 PM). As a nurse, you'll need to quickly convert standard time into military time and from military time into standard time for many core roles.</p>
+    <p>Let’s go through the basics! For the purpose of time conversions, we will always be dealing with EST (Eastern Standard Time). This will make the rules fairly straightforward to understand and comprehend than in other time zones.</p>
+
+    <div class="tip"><strong>Tip #1:</strong> No matter what the hour sign is, the minutes sign will always say the same. Make sure to append the minutes to whatever the correct hour value is.</div>
+    <div class="tip"><strong>Tip #2:</strong> Military time always contains four digits, with no AM or PM.</div>
+    <div class="tip"><strong>Tip #3:</strong> 12:00 PM stays 12:00 and 12:00 AM becomes 00:00. These two edge cases are important to memorize.</div>
+
+    <h3>Case 1: AM Times (12:00 AM to 11:59 AM)</h3>
+    <ul>
+      <li>Keep the hour the same, except for 12 AM which becomes 00:00</li>
+      <li>If the hour is a single digit, add the leading zero</li>
+    </ul>
+    <div class="example">
+      <p>Examples:</p>
+      <ul>
+        <li>7:30 AM → 07:30</li>
+        <li>11:45 AM → 11:45</li>
+        <li>12:00 AM → 00:00</li>
+      </ul>
+    </div>
+
+    <h3>Case 2: PM Times (12:00 PM to 11:59 PM)</h3>
+    <ul>
+      <li>Add 12 to the hour, except for 12 PM which stays 12:00</li>
+    </ul>
+    <div class="example">
+      <p>Examples:</p>
+      <ul>
+        <li>2:00 PM → 14:00</li>
+        <li>6:15 PM → 18:15</li>
+        <li>12:00 PM → 12:00</li>
+      </ul>
+    </div>
+
+    <p>Now, two worked examples:</p>
+    <div class="example">
+      <ol>
+        <li>
+          <p><strong>09:19 AM → ?</strong></p>
+          <p>AM so Case 1: hour stays “09”. Final: <strong>09:19</strong>.</p>
+        </li>
+        <li>
+          <p><strong>06:10 PM → ?</strong></p>
+          <p>PM so Case 2: 6 + 12 = 18. Final: <strong>18:10</strong>.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="section-box" id="military-to-standard-time">
+    <h2>Military Time to Standard Time</h2>
+    <p>Converting military time back to standard time is similar—just remember the two edge cases.</p>
+    <div class="tip"><strong>Tip #1:</strong> Minutes never change.</div>
+    <div class="tip"><strong>Tip #2:</strong> 00:00 becomes 12:00 AM; 12:00 stays 12:00 PM.</div>
+
+    <h3>Case 1: 00:00–11:59</h3>
+    <ul>
+      <li>Keep the hour the same unless it’s 00 (then becomes 12)</li>
+      <li>Add AM</li>
+    </ul>
+    <div class="example">
+      <p>Examples:</p>
+      <ul>
+        <li>00:00 → 12:00 AM</li>
+        <li>07:30 → 7:30 AM</li>
+        <li>11:45 → 11:45 AM</li>
+      </ul>
+    </div>
+
+    <h3>Case 2: 12:00–23:59</h3>
+    <ul>
+      <li>Subtract 12 from the hour</li>
+      <li>Add PM</li>
+    </ul>
+    <div class="example">
+      <p>Examples:</p>
+      <ul>
+        <li>14:00 → 2:00 PM</li>
+        <li>18:15 → 6:15 PM</li>
+        <li>23:50 → 11:50 PM</li>
+      </ul>
+    </div>
+
+    <p>Worked examples:</p>
+    <div class="example">
+      <ol>
+        <li>
+          <p><strong>23:34 → ?</strong></p>
+          <p>23 > 12 → PM; 23 − 12 = 11. Final: <strong>11:34 PM</strong>.</p>
+        </li>
+        <li>
+          <p><strong>07:41 → ?</strong></p>
+          <p>07 < 12 → AM. Final: <strong>07:41 AM</strong>.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="section-box" id="analog-clock-conversions">
+    <h2>Analog Clock Conversions</h2>
+    <p>While digital clocks are common in most hospitals, reading an analog clock quickly remains valuable. Let’s simplify it.</p>
+    <img id="clock" src="clock.png" alt="Analog clock example">
+
+    <h3>Part #1</h3>
+    <p>The shorter hand is hours; the longer hand is minutes. If the hour hand sits between numbers, read the one it just passed.</p>
+    <ul>
+      <li>Tip: It only “becomes” the next hour once it fully passes it.</li>
+    </ul>
+
+    <h4>Hours</h4>
+    <p>If the hour hand is between 11 and 12 but closer to 11, the hour is 11.</p>
+    <div class="tip"><strong>Tip #1:</strong> The hour hand always points to the current hour.</div>
+    <div class="tip"><strong>Tip #2:</strong> It only changes to the next hour after passing it.</div>
+
+    <h4>Minutes</h4>
+    <p>Each number is a 5‑minute increment; count individual ticks if between numbers.</p>
+    <ul>
+      <li>1 → 5m, 2 → 10m, …, 12 → 00m</li>
+    </ul>
+
+    <div class="example">
+      <h4>Example Problems:</h4>
+      <ol>
+        <li>
+          <img src="first1.png" class="example" alt="Clock Example 1">
+          <p><strong>07:41 → ?</strong></p>
+          <p>Hour hand just past 7 → 7; minute hand at 8 → 40; AM → <strong>07:41 AM</strong>.</p>
+        </li>
+        <li>
+          <img src="second1.png" class="example" alt="Clock Example 2">
+          <p><strong>13:20 → ?</strong></p>
+          <p>Hour hand just past 1 → 1+12=13; minute hand at 4 → 20; PM → <strong>13:20 PM</strong>.</p>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+</body>
+</html>
